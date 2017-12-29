@@ -1,0 +1,8 @@
+.CodeMirror {
+    height: 600px;
+    border-right: 1px solid #ddd;
+}
+
+.Editor {
+    flex: 1;
+}
