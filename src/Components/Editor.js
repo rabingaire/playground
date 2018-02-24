@@ -1,14 +1,15 @@
 import React, {Component} from 'react';
 import CodeMirror from 'react-codemirror';
 import 'codemirror/lib/codemirror.css';
+
 import './Editor.css';
-import 'codemirror/mode/jsx/jsx';
+import 'codemirror/mode/markdown/markdown';
 
 const Editor = (props) => {
     const { code, updateCode } = props;
     const options = {
         lineNumbers: true,
-        mode: 'jsx',
+        mode: 'markdown',
         matchBrackets: true,
     };
     

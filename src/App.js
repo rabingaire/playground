@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+
 import './App.css';
 
 import Header from './Components/Header';
@@ -9,7 +10,7 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-        code: '// Code Here'
+        code: '# Markdown Code Here'
     };
     this.updateCode = this.updateCode.bind(this);
   }
@@ -31,7 +32,7 @@ class App extends Component {
           <Editor 
             updateCode={this.updateCode}
             code={this.state.code} />
-          <Preview>{this.state.code}</Preview>
+          <Preview code={this.state.code} />
         </div>
       </div>
     );
