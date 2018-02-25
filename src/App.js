@@ -10,7 +10,7 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-        code: '# Markdown Code Here'
+        code: '<!-- Html Code Here -->'
     };
     this.updateCode = this.updateCode.bind(this);
   }

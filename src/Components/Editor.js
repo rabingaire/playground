@@ -3,13 +3,13 @@ import CodeMirror from 'react-codemirror';
 import 'codemirror/lib/codemirror.css';
 
 import './Editor.css';
-import 'codemirror/mode/markdown/markdown';
+import 'codemirror/mode/htmlmixed/htmlmixed';
 
 const Editor = (props) => {
     const { code, updateCode } = props;
     const options = {
         lineNumbers: true,
-        mode: 'markdown',
+        mode: 'htmlmixed',
         matchBrackets: true,
     };
     

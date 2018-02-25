@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import ReactMarkdown from 'react-markdown';
+import renderHTML from 'react-render-html';
 
 import './Preview.css';
 
 const Preview = ({ code }) => 
     <div className='Preview'>
-        <ReactMarkdown source={code} />
+        {renderHTML(code)}
     </div>
 
 export default Preview; 
